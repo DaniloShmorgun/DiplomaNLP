@@ -1,0 +1,11 @@
+tf-main/data
+*.csv
+*.h5
+*.pkl
+*.spm
+tf-main/test_*
+tf-main/results*
+tf-main/sentencepiece/
+tf-main/wordpiece/
+tf-main/__pycache__/
+tf-main/.ipynb_checkpoints

@@ -1,0 +1,15 @@
+version: '1.0'
+services:
+  jupyter-lab:
+    build: .
+    ports: 
+      - "8888:8888"
+    volumes:
+      - ./tf-main:/tf-main
+    deploy:
+      resources:
+        reservations:
+          devices: 
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
